@@ -67,7 +67,7 @@ The `UPDATE ... WHERE quantity_on_hand >= 60` takes a row lock and rechecks the 
 Save pgAdmin screenshots or query outputs in [`Evidence/portfolio3`](../../Evidence/portfolio3/):
 
 - [Lab setup result](../../Evidence/portfolio3/lab-setup-success.png) confirms the fresh starting balances and two open demo orders.
-- COMMIT result showing the 9,800 g balance and receipt movement.
+- [COMMIT example result](../../Evidence/portfolio3/commit-example-success.png) shows the 9,800 g rice balance and one committed receipt.
 - ROLLBACK preview and final result showing the restored balance and one committed receipt.
 - READ COMMITTED and REPEATABLE READ values across the two sessions.
 - The blocked competing update, its zero-row result after Session A commits, and the final concurrency verification.
