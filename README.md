@@ -53,14 +53,14 @@ The matching [relational schema review](Portfolios/portfolio-1-database-design/s
 |---|---:|---|---|
 | Portfolio 1: Database design and modelling | 7 | Case description, ER diagram, relational schema, keys, constraints, normalization explanation | In progress: schema implemented and constraints validated |
 | [Portfolio 2: Query processing and optimisation](Portfolios/portfolio-2-query-processing-and-optimisation/README.md) | 7 | SQL, query results, execution plans, indexes, performance analysis | Complete: query results, scaled plans, and index comparison documented |
-| Portfolio 3: Transactions and concurrency | 7 | Commit, rollback, isolation, concurrency issue and control, output evidence | Not started |
+| [Portfolio 3: Transactions and concurrency](Portfolios/portfolio-3-transactions-and-concurrency/README.md) | 7 | Commit, rollback, isolation, concurrency issue and control, output evidence | In progress: isolated PostgreSQL lab and guided scripts prepared; execution evidence next |
 | Portfolio 4: NoSQL and advanced data models | 7 | NoSQL model, implementation evidence, suitability explanation | Not started |
 | Portfolio 5: Distributed and cloud database exercise | 6 | Replication, sharding, availability, consistency, or deployment evidence | Not started |
 | Final documentation and technical reflection | 6 | 2-3 page LMS summary, repository link, evidence, reflection, references, AI-use declaration | Not started |
 
 ## Repository and evidence
 
-The course brief expects a private GitHub repository with progressive commits, SQL scripts, schemas, ER diagrams, implementation evidence, screenshots or outputs, and clear README files. The local repository is initialized; its GitHub remote and assessor access still need to be confirmed before submission.
+The course brief expects a private GitHub repository with progressive commits, SQL scripts, schemas, ER diagrams, implementation evidence, screenshots or outputs, and clear README files. The [GitHub repository](https://github.com/tenternet/MIT-8103-CA) is initialized and receiving progressive portfolio commits. Assessor access still needs to be confirmed before submission.
 
 Evidence will be organized under `Evidence/`, with portfolio work under `Portfolios/`. Each activity README will describe how to reproduce and verify its work. The GitHub repository and LMS submission must both be ready before the target date.
 

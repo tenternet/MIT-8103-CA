@@ -27,7 +27,7 @@ This portfolio was applied and checked with PostgreSQL 18 using pgAdmin 4.
 2. Open that database's **Query Tool** and run these files in order: `schema.sql`, `seed.sql`, then `verify.sql`.
 3. Confirm that `public` contains 13 tables and that `verify.sql` returns 12 `PASS` rows.
 
-The SQL files are in this portfolio folder. `schema.sql` and `seed.sql` are intended for a fresh database; the seed uses fixed IDs, so run them only once per database. For another practice run, create another empty database. See the [pgAdmin validation screenshot](../../Evidence/screenshots/Screenshot%202026-11-07%20054948.png) and the [text validation transcript](../../Evidence/portfolio1-validation-output.txt).
+The SQL files are in this portfolio folder. `schema.sql` and `seed.sql` are intended for a fresh database; the seed uses fixed IDs, so run them only once per database. For another practice run, create another empty database. See the [pgAdmin validation screenshot](../../Evidence/portfolio1/Screenshot%202026-11-07%20054948.png) and the [text validation transcript](../../Evidence/portfolio1-validation-output.txt).
 
 ## Design decisions to carry into the relational schema
 
