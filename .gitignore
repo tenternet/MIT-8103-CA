@@ -1,0 +1,6 @@
+# Local, disposable PostgreSQL validation cluster. Track SQL and output evidence instead.
+Evidence/_local_pgdata/
+Evidence/postgres-validation.log
+
+# Keep the supplied course brief local; track the project work instead.
+mit-8103-advanced-database-systems-ca-september-cohort-2026.pdf

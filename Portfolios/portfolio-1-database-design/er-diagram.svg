@@ -1,0 +1,329 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2080" height="1580" viewBox="0 0 2080 1580">
+<defs><filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#24466c" flood-opacity=".12"/></filter></defs>
+<rect width="2080" height="1580" fill="#f5f8fc"/>
+<text x="70" y="68" font-family="Segoe UI,Arial,sans-serif" font-size="38" font-weight="700" fill="#172b4d">Miva Bites Restaurant POS</text>
+<text x="70" y="105" font-family="Segoe UI,Arial,sans-serif" font-size="19" fill="#60738f">Conceptual entity relationship diagram  ·  13 entities  ·  two-branch dine-in and takeaway system</text>
+<text x="70" y="164" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="1.2" fill="#2463a5">BRANCH &amp; PEOPLE</text>
+<text x="470" y="164" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="1.2" fill="#177d71">ORDER LIFECYCLE</text>
+<text x="1260" y="164" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="1.2" fill="#7151a6">MENU &amp; RECIPES</text>
+<text x="1650" y="164" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="1.2" fill="#a96111">INVENTORY</text>
+<polyline points="220,352 220,390" fill="none" stroke="#7d93ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="220" cy="352" r="4" fill="#7d93ad"/>
+<circle cx="220" cy="390" r="4" fill="#7d93ad"/>
+<rect x="230.0" y="343" width="30" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="245" y="359" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">1</text>
+<rect x="223.0" y="361" width="44" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="245" y="377" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">0..*</text>
+<polyline points="70,320 35,320 35,741 70,741" fill="none" stroke="#7d93ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="70" cy="320" r="4" fill="#7d93ad"/>
+<circle cx="70" cy="741" r="4" fill="#7d93ad"/>
+<rect x="33.0" y="289" width="30" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="48" y="305" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">1</text>
+<rect x="26.0" y="749" width="44" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="48" y="765" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">0..*</text>
+<polyline points="370,320 435,320 435,505 470,505" fill="none" stroke="#7d93ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="370" cy="320" r="4" fill="#7d93ad"/>
+<circle cx="470" cy="505" r="4" fill="#7d93ad"/>
+<rect x="385.0" y="309" width="30" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="400" y="325" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">1</text>
+<rect x="428.0" y="489" width="44" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="450" y="505" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">0..*</text>
+<polyline points="370,460 410,460 410,555 470,555" fill="none" stroke="#7d93ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="370" cy="460" r="4" fill="#7d93ad"/>
+<circle cx="470" cy="555" r="4" fill="#7d93ad"/>
+<rect x="367.0" y="449" width="30" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="382" y="465" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">1</text>
+<rect x="428.0" y="539" width="44" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="450" y="555" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">0..*</text>
+<polyline points="370,740 395,740 395,680 470,680" fill="none" stroke="#7d93ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="370" cy="740" r="4" fill="#7d93ad"/>
+<circle cx="470" cy="680" r="4" fill="#7d93ad"/>
+<rect x="352.0" y="709" width="44" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="374" y="725" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">0..1</text>
+<rect x="428.0" y="664" width="44" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="450" y="680" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">0..*</text>
+<polyline points="370,960 445,960 445,715 470,715" fill="none" stroke="#7d93ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="370" cy="960" r="4" fill="#7d93ad"/>
+<circle cx="470" cy="715" r="4" fill="#7d93ad"/>
+<rect x="360.0" y="949" width="44" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="382" y="965" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">0..1</text>
+<rect x="428.0" y="699" width="44" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="450" y="715" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">0..*</text>
+<polyline points="770,500 820,500 820,470 870,470" fill="none" stroke="#7d93ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="770" cy="500" r="4" fill="#7d93ad"/>
+<circle cx="870" cy="470" r="4" fill="#7d93ad"/>
+<rect x="766.0" y="489" width="30" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="781" y="505" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">1</text>
+<rect x="823.0" y="459" width="44" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="845" y="475" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">1..*</text>
+<polyline points="770,680 820,680 820,900 870,900" fill="none" stroke="#7d93ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="770" cy="680" r="4" fill="#7d93ad"/>
+<circle cx="870" cy="900" r="4" fill="#7d93ad"/>
+<rect x="768.0" y="669" width="30" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="783" y="685" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">1</text>
+<rect x="823.0" y="889" width="44" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="845" y="905" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">0..*</text>
+<polyline points="1260,490 1210,490 1210,460 1170,460" fill="none" stroke="#7d93ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1260" cy="490" r="4" fill="#7d93ad"/>
+<circle cx="1170" cy="460" r="4" fill="#7d93ad"/>
+<rect x="1206.0" y="479" width="30" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="1221" y="495" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">1</text>
+<rect x="1150.0" y="429" width="44" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="1172" y="445" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">0..*</text>
+<polyline points="1410,322 1410,390" fill="none" stroke="#7d93ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1410" cy="322" r="4" fill="#7d93ad"/>
+<circle cx="1410" cy="390" r="4" fill="#7d93ad"/>
+<rect x="1410.0" y="312" width="30" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="1425" y="328" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">1</text>
+<rect x="1403.0" y="358" width="44" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="1425" y="374" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">0..*</text>
+<polyline points="1410,602 1410,680" fill="none" stroke="#7d93ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1410" cy="602" r="4" fill="#7d93ad"/>
+<circle cx="1410" cy="680" r="4" fill="#7d93ad"/>
+<rect x="1410.0" y="592" width="30" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="1425" y="608" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">1</text>
+<rect x="1403.0" y="647" width="44" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="1425" y="663" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">0..*</text>
+<polyline points="1650,720 1600,720 1600,750 1560,750" fill="none" stroke="#7d93ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1650" cy="720" r="4" fill="#7d93ad"/>
+<circle cx="1560" cy="750" r="4" fill="#7d93ad"/>
+<rect x="1619.0" y="709" width="30" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="1634" y="725" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">1</text>
+<rect x="1551.0" y="739" width="44" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="1573" y="755" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">0..*</text>
+<polyline points="370,340 455,340 455,1150 1600,1150 1600,970 1650,970" fill="none" stroke="#7d93ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="370" cy="340" r="4" fill="#7d93ad"/>
+<circle cx="1650" cy="970" r="4" fill="#7d93ad"/>
+<rect x="440.0" y="789" width="30" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="455" y="805" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">1</text>
+<rect x="1602.0" y="959" width="44" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="1624" y="975" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">0..*</text>
+<polyline points="1800,802 1800,880" fill="none" stroke="#7d93ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1800" cy="802" r="4" fill="#7d93ad"/>
+<circle cx="1800" cy="880" r="4" fill="#7d93ad"/>
+<rect x="1800.0" y="794" width="30" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="1815" y="810" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">1</text>
+<rect x="1793.0" y="847" width="44" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="1815" y="863" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">0..*</text>
+<polyline points="330,352 390,352 390,1426 1800,1426 1800,1412" fill="none" stroke="#7d93ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="330" cy="352" r="4" fill="#7d93ad"/>
+<circle cx="1800" cy="1412" r="4" fill="#7d93ad"/>
+<rect x="375.0" y="854" width="30" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="390" y="870" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">1</text>
+<rect x="1788.0" y="1429" width="44" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="1810" y="1445" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">0..*</text>
+<polyline points="1950,720 1990,720 1990,1260 1950,1260" fill="none" stroke="#7d93ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1950" cy="720" r="4" fill="#7d93ad"/>
+<circle cx="1950" cy="1260" r="4" fill="#7d93ad"/>
+<rect x="1945.0" y="727" width="30" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="1960" y="743" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">1</text>
+<rect x="1933.0" y="1232" width="44" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="1955" y="1248" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">0..*</text>
+<polyline points="370,570 410,570 410,1240 1650,1240" fill="none" stroke="#7d93ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="370" cy="570" r="4" fill="#7d93ad"/>
+<circle cx="1650" cy="1240" r="4" fill="#7d93ad"/>
+<rect x="376.0" y="559" width="30" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="391" y="575" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">1</text>
+<rect x="1610.0" y="1211" width="44" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="1632" y="1227" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">0..*</text>
+<polyline points="770,730 800,730 800,1380 1650,1380" fill="none" stroke="#7d93ad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="770" cy="730" r="4" fill="#7d93ad"/>
+<circle cx="1650" cy="1380" r="4" fill="#7d93ad"/>
+<rect x="758.0" y="699" width="44" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="780" y="715" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">0..1</text>
+<rect x="1611.0" y="1349" width="44" height="22" rx="7" fill="#ffffff" stroke="#c5d2e1"/>
+<text x="1633" y="1365" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#172b4d">0..*</text>
+<g filter="url(#shadow)"><rect x="70" y="200" width="300" height="152" rx="12" fill="#ffffff" stroke="#d7e1ed" stroke-width="1.5"/><path d="M82,200 h276 a12,12 0 0 1 12,12 v36 h-300 v-36 a12,12 0 0 1 12,-12 z" fill="#dceeff"/><text x="86" y="231" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" letter-spacing=".5" fill="#2463a5">BRANCH</text></g>
+<rect x="84" y="253" width="30" height="20" rx="5" fill="#2463a5"/>
+<text x="99.0" y="267" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">PK</text>
+<text x="126" y="269" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">branch_id</text>
+<line x1="82" y1="278" x2="358" y2="278" stroke="#edf1f6"/>
+<text x="88" y="299" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">name</text>
+<line x1="82" y1="308" x2="358" y2="308" stroke="#edf1f6"/>
+<text x="88" y="329" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">address</text>
+<g filter="url(#shadow)"><rect x="70" y="390" width="300" height="212" rx="12" fill="#ffffff" stroke="#d7e1ed" stroke-width="1.5"/><path d="M82,390 h276 a12,12 0 0 1 12,12 v36 h-300 v-36 a12,12 0 0 1 12,-12 z" fill="#dceeff"/><text x="86" y="421" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" letter-spacing=".5" fill="#2463a5">EMPLOYEE</text></g>
+<rect x="84" y="443" width="30" height="20" rx="5" fill="#2463a5"/>
+<text x="99.0" y="457" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">PK</text>
+<text x="126" y="459" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">employee_id</text>
+<line x1="82" y1="468" x2="358" y2="468" stroke="#edf1f6"/>
+<rect x="84" y="473" width="30" height="20" rx="5" fill="#2463a5"/>
+<text x="99.0" y="487" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">FK</text>
+<text x="126" y="489" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">branch_id</text>
+<line x1="82" y1="498" x2="358" y2="498" stroke="#edf1f6"/>
+<text x="88" y="519" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">full_name</text>
+<line x1="82" y1="528" x2="358" y2="528" stroke="#edf1f6"/>
+<text x="88" y="549" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">role</text>
+<line x1="82" y1="558" x2="358" y2="558" stroke="#edf1f6"/>
+<text x="88" y="579" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">active</text>
+<g filter="url(#shadow)"><rect x="70" y="650" width="300" height="212" rx="12" fill="#ffffff" stroke="#d7e1ed" stroke-width="1.5"/><path d="M82,650 h276 a12,12 0 0 1 12,12 v36 h-300 v-36 a12,12 0 0 1 12,-12 z" fill="#dceeff"/><text x="86" y="681" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" letter-spacing=".5" fill="#2463a5">DINING_TABLE</text></g>
+<rect x="84" y="703" width="30" height="20" rx="5" fill="#2463a5"/>
+<text x="99.0" y="717" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">PK</text>
+<text x="126" y="719" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">table_id</text>
+<line x1="82" y1="728" x2="358" y2="728" stroke="#edf1f6"/>
+<rect x="84" y="733" width="30" height="20" rx="5" fill="#2463a5"/>
+<text x="99.0" y="747" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">FK</text>
+<text x="126" y="749" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">branch_id</text>
+<line x1="82" y1="758" x2="358" y2="758" stroke="#edf1f6"/>
+<text x="88" y="779" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">table_number</text>
+<line x1="82" y1="788" x2="358" y2="788" stroke="#edf1f6"/>
+<text x="88" y="809" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">seats</text>
+<line x1="82" y1="818" x2="358" y2="818" stroke="#edf1f6"/>
+<text x="88" y="839" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">status</text>
+<g filter="url(#shadow)"><rect x="70" y="900" width="300" height="152" rx="12" fill="#ffffff" stroke="#d7e1ed" stroke-width="1.5"/><path d="M82,900 h276 a12,12 0 0 1 12,12 v36 h-300 v-36 a12,12 0 0 1 12,-12 z" fill="#dceeff"/><text x="86" y="931" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" letter-spacing=".5" fill="#2463a5">CUSTOMER</text></g>
+<rect x="84" y="953" width="30" height="20" rx="5" fill="#2463a5"/>
+<text x="99.0" y="967" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">PK</text>
+<text x="126" y="969" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">customer_id</text>
+<line x1="82" y1="978" x2="358" y2="978" stroke="#edf1f6"/>
+<text x="88" y="999" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">full_name</text>
+<line x1="82" y1="1008" x2="358" y2="1008" stroke="#edf1f6"/>
+<text x="88" y="1029" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">phone</text>
+<g filter="url(#shadow)"><rect x="470" y="420" width="300" height="332" rx="12" fill="#ffffff" stroke="#d7e1ed" stroke-width="1.5"/><path d="M482,420 h276 a12,12 0 0 1 12,12 v36 h-300 v-36 a12,12 0 0 1 12,-12 z" fill="#ddf5f0"/><text x="486" y="451" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" letter-spacing=".5" fill="#177d71">POS_ORDER</text></g>
+<rect x="484" y="473" width="30" height="20" rx="5" fill="#177d71"/>
+<text x="499.0" y="487" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">PK</text>
+<text x="526" y="489" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">order_id</text>
+<line x1="482" y1="498" x2="758" y2="498" stroke="#edf1f6"/>
+<rect x="484" y="503" width="30" height="20" rx="5" fill="#177d71"/>
+<text x="499.0" y="517" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">FK</text>
+<text x="526" y="519" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">branch_id</text>
+<line x1="482" y1="528" x2="758" y2="528" stroke="#edf1f6"/>
+<rect x="484" y="533" width="30" height="20" rx="5" fill="#177d71"/>
+<text x="499.0" y="547" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">FK</text>
+<text x="526" y="549" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">employee_id</text>
+<line x1="482" y1="558" x2="758" y2="558" stroke="#edf1f6"/>
+<rect x="484" y="563" width="30" height="20" rx="5" fill="#177d71"/>
+<text x="499.0" y="577" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">FK</text>
+<text x="526" y="579" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">customer_id · optional</text>
+<line x1="482" y1="588" x2="758" y2="588" stroke="#edf1f6"/>
+<rect x="484" y="593" width="30" height="20" rx="5" fill="#177d71"/>
+<text x="499.0" y="607" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">FK</text>
+<text x="526" y="609" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">table_id · optional</text>
+<line x1="482" y1="618" x2="758" y2="618" stroke="#edf1f6"/>
+<text x="488" y="639" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">order_type</text>
+<line x1="482" y1="648" x2="758" y2="648" stroke="#edf1f6"/>
+<text x="488" y="669" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">status</text>
+<line x1="482" y1="678" x2="758" y2="678" stroke="#edf1f6"/>
+<text x="488" y="699" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">opened_at</text>
+<line x1="482" y1="708" x2="758" y2="708" stroke="#edf1f6"/>
+<text x="488" y="729" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">closed_at</text>
+<g filter="url(#shadow)"><rect x="870" y="360" width="300" height="242" rx="12" fill="#ffffff" stroke="#d7e1ed" stroke-width="1.5"/><path d="M882,360 h276 a12,12 0 0 1 12,12 v36 h-300 v-36 a12,12 0 0 1 12,-12 z" fill="#ddf5f0"/><text x="886" y="391" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" letter-spacing=".5" fill="#177d71">ORDER_ITEM</text></g>
+<rect x="884" y="413" width="30" height="20" rx="5" fill="#177d71"/>
+<text x="899.0" y="427" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">PK</text>
+<text x="926" y="429" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">order_item_id</text>
+<line x1="882" y1="438" x2="1158" y2="438" stroke="#edf1f6"/>
+<rect x="884" y="443" width="30" height="20" rx="5" fill="#177d71"/>
+<text x="899.0" y="457" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">FK</text>
+<text x="926" y="459" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">order_id</text>
+<line x1="882" y1="468" x2="1158" y2="468" stroke="#edf1f6"/>
+<rect x="884" y="473" width="30" height="20" rx="5" fill="#177d71"/>
+<text x="899.0" y="487" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">FK</text>
+<text x="926" y="489" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">menu_item_id</text>
+<line x1="882" y1="498" x2="1158" y2="498" stroke="#edf1f6"/>
+<text x="888" y="519" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">quantity</text>
+<line x1="882" y1="528" x2="1158" y2="528" stroke="#edf1f6"/>
+<text x="888" y="549" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">sale_unit_price</text>
+<line x1="882" y1="558" x2="1158" y2="558" stroke="#edf1f6"/>
+<text x="888" y="579" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">kitchen_status</text>
+<g filter="url(#shadow)"><rect x="870" y="780" width="300" height="332" rx="12" fill="#ffffff" stroke="#d7e1ed" stroke-width="1.5"/><path d="M882,780 h276 a12,12 0 0 1 12,12 v36 h-300 v-36 a12,12 0 0 1 12,-12 z" fill="#ddf5f0"/><text x="886" y="811" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" letter-spacing=".5" fill="#177d71">PAYMENT</text></g>
+<rect x="884" y="833" width="30" height="20" rx="5" fill="#177d71"/>
+<text x="899.0" y="847" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">PK</text>
+<text x="926" y="849" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">payment_id</text>
+<line x1="882" y1="858" x2="1158" y2="858" stroke="#edf1f6"/>
+<rect x="884" y="863" width="30" height="20" rx="5" fill="#177d71"/>
+<text x="899.0" y="877" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">FK</text>
+<text x="926" y="879" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">order_id</text>
+<line x1="882" y1="888" x2="1158" y2="888" stroke="#edf1f6"/>
+<text x="888" y="909" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">payment_type</text>
+<line x1="882" y1="918" x2="1158" y2="918" stroke="#edf1f6"/>
+<text x="888" y="939" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">method</text>
+<line x1="882" y1="948" x2="1158" y2="948" stroke="#edf1f6"/>
+<text x="888" y="969" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">amount</text>
+<line x1="882" y1="978" x2="1158" y2="978" stroke="#edf1f6"/>
+<text x="888" y="999" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">status</text>
+<line x1="882" y1="1008" x2="1158" y2="1008" stroke="#edf1f6"/>
+<text x="888" y="1029" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">provider_reference</text>
+<line x1="882" y1="1038" x2="1158" y2="1038" stroke="#edf1f6"/>
+<text x="888" y="1059" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">recorded_at</text>
+<line x1="882" y1="1068" x2="1158" y2="1068" stroke="#edf1f6"/>
+<rect x="884" y="1073" width="30" height="20" rx="5" fill="#177d71"/>
+<text x="899" y="1087" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">FK</text>
+<text x="926" y="1089" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">refund_of_payment_id</text>
+<g filter="url(#shadow)"><rect x="1260" y="200" width="300" height="122" rx="12" fill="#ffffff" stroke="#d7e1ed" stroke-width="1.5"/><path d="M1272,200 h276 a12,12 0 0 1 12,12 v36 h-300 v-36 a12,12 0 0 1 12,-12 z" fill="#f1eaff"/><text x="1276" y="231" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" letter-spacing=".5" fill="#7151a6">MENU_CATEGORY</text></g>
+<rect x="1274" y="253" width="30" height="20" rx="5" fill="#7151a6"/>
+<text x="1289.0" y="267" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">PK</text>
+<text x="1316" y="269" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">category_id</text>
+<line x1="1272" y1="278" x2="1548" y2="278" stroke="#edf1f6"/>
+<text x="1278" y="299" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">name</text>
+<g filter="url(#shadow)"><rect x="1260" y="390" width="300" height="212" rx="12" fill="#ffffff" stroke="#d7e1ed" stroke-width="1.5"/><path d="M1272,390 h276 a12,12 0 0 1 12,12 v36 h-300 v-36 a12,12 0 0 1 12,-12 z" fill="#f1eaff"/><text x="1276" y="421" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" letter-spacing=".5" fill="#7151a6">MENU_ITEM</text></g>
+<rect x="1274" y="443" width="30" height="20" rx="5" fill="#7151a6"/>
+<text x="1289.0" y="457" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">PK</text>
+<text x="1316" y="459" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">menu_item_id</text>
+<line x1="1272" y1="468" x2="1548" y2="468" stroke="#edf1f6"/>
+<rect x="1274" y="473" width="30" height="20" rx="5" fill="#7151a6"/>
+<text x="1289.0" y="487" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">FK</text>
+<text x="1316" y="489" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">category_id</text>
+<line x1="1272" y1="498" x2="1548" y2="498" stroke="#edf1f6"/>
+<text x="1278" y="519" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">name</text>
+<line x1="1272" y1="528" x2="1548" y2="528" stroke="#edf1f6"/>
+<text x="1278" y="549" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">current_price</text>
+<line x1="1272" y1="558" x2="1548" y2="558" stroke="#edf1f6"/>
+<text x="1278" y="579" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">active</text>
+<g filter="url(#shadow)"><rect x="1260" y="680" width="300" height="152" rx="12" fill="#ffffff" stroke="#d7e1ed" stroke-width="1.5"/><path d="M1272,680 h276 a12,12 0 0 1 12,12 v36 h-300 v-36 a12,12 0 0 1 12,-12 z" fill="#f1eaff"/><text x="1276" y="711" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" letter-spacing=".5" fill="#7151a6">RECIPE</text></g>
+<rect x="1274" y="733" width="42" height="20" rx="5" fill="#7151a6"/>
+<text x="1295.0" y="747" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">PK,FK</text>
+<text x="1326" y="749" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">menu_item_id</text>
+<line x1="1272" y1="758" x2="1548" y2="758" stroke="#edf1f6"/>
+<rect x="1274" y="763" width="42" height="20" rx="5" fill="#7151a6"/>
+<text x="1295.0" y="777" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">PK,FK</text>
+<text x="1326" y="779" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">ingredient_id</text>
+<line x1="1272" y1="788" x2="1548" y2="788" stroke="#edf1f6"/>
+<text x="1278" y="809" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">quantity_per_item</text>
+<g filter="url(#shadow)"><rect x="1650" y="650" width="300" height="152" rx="12" fill="#ffffff" stroke="#d7e1ed" stroke-width="1.5"/><path d="M1662,650 h276 a12,12 0 0 1 12,12 v36 h-300 v-36 a12,12 0 0 1 12,-12 z" fill="#fff0dc"/><text x="1666" y="681" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" letter-spacing=".5" fill="#a96111">INGREDIENT</text></g>
+<rect x="1664" y="703" width="30" height="20" rx="5" fill="#a96111"/>
+<text x="1679.0" y="717" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">PK</text>
+<text x="1706" y="719" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">ingredient_id</text>
+<line x1="1662" y1="728" x2="1938" y2="728" stroke="#edf1f6"/>
+<text x="1668" y="749" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">name</text>
+<line x1="1662" y1="758" x2="1938" y2="758" stroke="#edf1f6"/>
+<text x="1668" y="779" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">unit</text>
+<g filter="url(#shadow)"><rect x="1650" y="880" width="300" height="182" rx="12" fill="#ffffff" stroke="#d7e1ed" stroke-width="1.5"/><path d="M1662,880 h276 a12,12 0 0 1 12,12 v36 h-300 v-36 a12,12 0 0 1 12,-12 z" fill="#fff0dc"/><text x="1666" y="911" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" letter-spacing=".5" fill="#a96111">INVENTORY</text></g>
+<rect x="1664" y="933" width="42" height="20" rx="5" fill="#a96111"/>
+<text x="1685.0" y="947" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">PK,FK</text>
+<text x="1716" y="949" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">branch_id</text>
+<line x1="1662" y1="958" x2="1938" y2="958" stroke="#edf1f6"/>
+<rect x="1664" y="963" width="42" height="20" rx="5" fill="#a96111"/>
+<text x="1685.0" y="977" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">PK,FK</text>
+<text x="1716" y="979" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">ingredient_id</text>
+<line x1="1662" y1="988" x2="1938" y2="988" stroke="#edf1f6"/>
+<text x="1668" y="1009" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">quantity_on_hand</text>
+<line x1="1662" y1="1018" x2="1938" y2="1018" stroke="#edf1f6"/>
+<text x="1668" y="1039" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">reorder_level</text>
+<g filter="url(#shadow)"><rect x="1650" y="1110" width="300" height="302" rx="12" fill="#ffffff" stroke="#d7e1ed" stroke-width="1.5"/><path d="M1662,1110 h276 a12,12 0 0 1 12,12 v36 h-300 v-36 a12,12 0 0 1 12,-12 z" fill="#fff0dc"/><text x="1666" y="1141" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" letter-spacing=".5" fill="#a96111">STOCK_MOVEMENT</text></g>
+<rect x="1664" y="1163" width="30" height="20" rx="5" fill="#a96111"/>
+<text x="1679.0" y="1177" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">PK</text>
+<text x="1706" y="1179" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">movement_id</text>
+<line x1="1662" y1="1188" x2="1938" y2="1188" stroke="#edf1f6"/>
+<rect x="1664" y="1193" width="30" height="20" rx="5" fill="#a96111"/>
+<text x="1679.0" y="1207" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">FK</text>
+<text x="1706" y="1209" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">branch_id</text>
+<line x1="1662" y1="1218" x2="1938" y2="1218" stroke="#edf1f6"/>
+<rect x="1664" y="1223" width="30" height="20" rx="5" fill="#a96111"/>
+<text x="1679.0" y="1237" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">FK</text>
+<text x="1706" y="1239" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">ingredient_id</text>
+<line x1="1662" y1="1248" x2="1938" y2="1248" stroke="#edf1f6"/>
+<rect x="1664" y="1253" width="30" height="20" rx="5" fill="#a96111"/>
+<text x="1679.0" y="1267" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">FK</text>
+<text x="1706" y="1269" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">employee_id</text>
+<line x1="1662" y1="1278" x2="1938" y2="1278" stroke="#edf1f6"/>
+<rect x="1664" y="1283" width="30" height="20" rx="5" fill="#a96111"/>
+<text x="1679.0" y="1297" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" fill="#ffffff">FK</text>
+<text x="1706" y="1299" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">order_id · optional</text>
+<line x1="1662" y1="1308" x2="1938" y2="1308" stroke="#edf1f6"/>
+<text x="1668" y="1329" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">movement_type</text>
+<line x1="1662" y1="1338" x2="1938" y2="1338" stroke="#edf1f6"/>
+<text x="1668" y="1359" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">quantity_change</text>
+<line x1="1662" y1="1368" x2="1938" y2="1368" stroke="#edf1f6"/>
+<text x="1668" y="1389" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#172b4d">recorded_at</text>
+<rect x="70" y="1484" width="1880" height="1" fill="#d9e2ec"/>
+<text x="70" y="1514" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#60738f">Keys: PK = primary key  ·  FK = foreign key  ·  PK,FK = composite key part  ·  Relationship labels show minimum..maximum (0..* = zero or many; 1..* = one or many).</text>
+<text x="70" y="1543" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#60738f">Optional customer, table, and stock-movement order links are shown; refunds reference the original payment for that order.</text>
+</svg>

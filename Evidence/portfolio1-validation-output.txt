@@ -1,0 +1,41 @@
+      branch      | orders | order_items
+------------------+--------+-------------
+ Miva Bites Ikeja |      1 |           2
+ Miva Bites Lekki |      1 |           0
+(2 rows)
+
+ order_id | order_total | net_successful_payments
+----------+-------------+-------------------------
+        1 |    14800.00 |                14300.00
+(1 row)
+
+ branch_id |   name   | quantity_on_hand | ledger_balance
+-----------+----------+------------------+----------------
+         1 | Chicken  |         9500.000 |       9500.000
+         1 | Rice     |         9700.000 |       9700.000
+         1 | Lemon    |           99.500 |         99.500
+         1 | Palm Oil |         4970.000 |       4970.000
+         1 | Water    |        49750.000 |      49750.000
+         2 | Chicken  |         5000.000 |       5000.000
+         2 | Rice     |         5000.000 |       5000.000
+         2 | Lemon    |           50.000 |         50.000
+         2 | Palm Oil |         2000.000 |       2000.000
+         2 | Water    |        25000.000 |      25000.000
+(10 rows)
+
+DO
+                        validation_result
+-----------------------------------------------------------------
+ PASS: seed rows and relationships are present
+ PASS: inventory balances reconcile to stock movements
+ PASS: an order cannot use an employee from another branch
+ PASS: dine-in order requires a table
+ PASS: takeaway order cannot use a dining table
+ PASS: an order cannot be placed without an order item
+ PASS: a placed order retains at least one item
+ PASS: a refund must identify its original payment
+ PASS: refund and original payment must belong to the same order
+ PASS: inventory balance cannot be negative
+ PASS: sale-consumption movement requires an order
+ PASS: stock movement cannot use another branch employee
+(12 rows)
