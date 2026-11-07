@@ -17,7 +17,7 @@ View the [scalable SVG diagram](er-diagram.svg) or the [Mermaid source and desig
 - [Schema design, relationship review, constraints, and normalization](schema-design.md)
 - [PostgreSQL DDL draft](schema.sql)
 
-The schema has been applied to an isolated PostgreSQL 18 database with fictional data. See the [seed data](seed.sql), [repeatable validation checks](verify.sql), and [validation output](../../Evidence/portfolio1-validation-output.txt).
+The schema has been applied to an isolated PostgreSQL 18 database with fictional data. See the [seed data](seed.sql), [repeatable validation checks](verify.sql), [validation output](../../Evidence/portfolio1-validation-output.txt), and [pgAdmin screenshots](../../Evidence/portfolio1/).
 
 ## Reproduce in PostgreSQL with pgAdmin 4
 
