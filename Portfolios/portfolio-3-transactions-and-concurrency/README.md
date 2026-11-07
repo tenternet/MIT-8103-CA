@@ -1,6 +1,6 @@
 # Portfolio 3: Transactions and Concurrency
 
-**Status:** Isolated PostgreSQL lab created and setup verified; transaction demonstrations and remaining evidence are next.
+**Status:** Lab setup, COMMIT, and ROLLBACK demonstrated with screenshots; isolation and concurrency exercises are next.
 
 ## Goal
 
@@ -68,7 +68,8 @@ Save pgAdmin screenshots or query outputs in [`Evidence/portfolio3`](../../Evide
 
 - [Lab setup result](../../Evidence/portfolio3/lab-setup-success.png) confirms the fresh starting balances and two open demo orders.
 - [COMMIT example result](../../Evidence/portfolio3/commit-example-success.png) shows the 9,800 g rice balance and one committed receipt.
-- ROLLBACK preview and final result showing the restored balance and one committed receipt.
+- [ROLLBACK preview](../../Evidence/portfolio3/rollback-preview.png) shows the uncommitted 10,300 g balance and two visible receipts.
+- [ROLLBACK confirmation](../../Evidence/portfolio3/rollback-confirmed.png) shows the restored 9,800 g balance and one committed receipt.
 - READ COMMITTED and REPEATABLE READ values across the two sessions.
 - The blocked competing update, its zero-row result after Session A commits, and the final concurrency verification.
 

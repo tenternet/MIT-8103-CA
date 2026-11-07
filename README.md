@@ -53,7 +53,7 @@ The matching [relational schema review](Portfolios/portfolio-1-database-design/s
 |---|---:|---|---|
 | Portfolio 1: Database design and modelling | 7 | Case description, ER diagram, relational schema, keys, constraints, normalization explanation | In progress: schema implemented and constraints validated |
 | [Portfolio 2: Query processing and optimisation](Portfolios/portfolio-2-query-processing-and-optimisation/README.md) | 7 | SQL, query results, execution plans, indexes, performance analysis | Complete: query results, scaled plans, and index comparison documented |
-| [Portfolio 3: Transactions and concurrency](Portfolios/portfolio-3-transactions-and-concurrency/README.md) | 7 | Commit, rollback, isolation, concurrency issue and control, output evidence | In progress: transaction lab created and setup verified; transaction evidence next |
+| [Portfolio 3: Transactions and concurrency](Portfolios/portfolio-3-transactions-and-concurrency/README.md) | 7 | Commit, rollback, isolation, concurrency issue and control, output evidence | In progress: setup, COMMIT, and ROLLBACK captured; isolation and concurrency next |
 | Portfolio 4: NoSQL and advanced data models | 7 | NoSQL model, implementation evidence, suitability explanation | Not started |
 | Portfolio 5: Distributed and cloud database exercise | 6 | Replication, sharding, availability, consistency, or deployment evidence | Not started |
 | Final documentation and technical reflection | 6 | 2-3 page LMS summary, repository link, evidence, reflection, references, AI-use declaration | Not started |
