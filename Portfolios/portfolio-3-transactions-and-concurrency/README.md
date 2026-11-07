@@ -1,6 +1,6 @@
 # Portfolio 3: Transactions and Concurrency
 
-**Status:** Isolated PostgreSQL lab and guided scripts prepared; database execution and screenshots are next.
+**Status:** Isolated PostgreSQL lab created and setup verified; transaction demonstrations and remaining evidence are next.
 
 ## Goal
 
@@ -66,6 +66,7 @@ The `UPDATE ... WHERE quantity_on_hand >= 60` takes a row lock and rechecks the 
 
 Save pgAdmin screenshots or query outputs in [`Evidence/portfolio3`](../../Evidence/portfolio3/):
 
+- [Lab setup result](../../Evidence/portfolio3/lab-setup-success.png) confirms the fresh starting balances and two open demo orders.
 - COMMIT result showing the 9,800 g balance and receipt movement.
 - ROLLBACK preview and final result showing the restored balance and one committed receipt.
 - READ COMMITTED and REPEATABLE READ values across the two sessions.
