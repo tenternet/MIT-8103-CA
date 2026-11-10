@@ -1,6 +1,6 @@
 # Portfolio 5: Distributed and Cloud Databases
 
-**Status:** The local replica-set exercise ran successfully on 10 November 2026. The implementation results are recorded below; screenshots still need to be saved in the evidence folder.
+**Status:** Complete. The local replica-set exercise ran successfully on 10 November 2026, and screenshots are saved under [`Evidence/portfolio5`](../../Evidence/portfolio5/).
 
 ## Chosen exercise: replication with a MongoDB replica set
 
@@ -84,7 +84,14 @@ If you clone the project to a different folder, replace the project path in the 
 - A secondary-only connection to `localhost:27118` returned order `P5-ORDER-9501`, including its menu item, quantity, and total.
 - The final status check again showed one healthy primary and two healthy secondaries.
 
-Save the PowerShell screenshots for the replica status, acknowledged write, and secondary read in `Evidence/portfolio5/` before submission.
+Screenshots captured during the exercise:
+
+- [Three MongoDB lab nodes started](../../Evidence/portfolio5/01-node-startup.png).
+- [Replica set initialized](../../Evidence/portfolio5/02-replica-set-initialized.png).
+- [Initial healthy member states](../../Evidence/portfolio5/03-replica-members-before-write.png).
+- [Majority-acknowledged order write](../../Evidence/portfolio5/04-majority-write.png).
+- [Order read from a secondary](../../Evidence/portfolio5/05-secondary-read.png).
+- [Final healthy member states](../../Evidence/portfolio5/06-final-replica-status.png).
 
 ## References
 
