@@ -1,6 +1,6 @@
 # Portfolio 5: Distributed and Cloud Databases
 
-**Status:** In progress: the local MongoDB replica-set lab is prepared; hands-on execution and evidence are next.
+**Status:** The local replica-set exercise ran successfully on 10 November 2026. The implementation results are recorded below; screenshots still need to be saved in the evidence folder.
 
 ## Chosen exercise: replication with a MongoDB replica set
 
@@ -76,6 +76,15 @@ If you clone the project to a different folder, replace the project path in the 
 - The example order is acknowledged with `w: "majority"`.
 - A read directed to a secondary returns the order that was written through the replica set.
 - Replication copies data; the members in this classroom simulation still share one physical computer, so the setup does not prove protection against loss of that computer.
+
+## Results observed on 10 November 2026
+
+- `rs.status()` showed `localhost:27119` as `PRIMARY` and `localhost:27117` plus `localhost:27118` as `SECONDARY`; all three reported health `1`.
+- The sample order write returned `acknowledged: true` and `upsertedCount: 1` with majority write concern.
+- A secondary-only connection to `localhost:27118` returned order `P5-ORDER-9501`, including its menu item, quantity, and total.
+- The final status check again showed one healthy primary and two healthy secondaries.
+
+Save the PowerShell screenshots for the replica status, acknowledged write, and secondary read in `Evidence/portfolio5/` before submission.
 
 ## References
 
