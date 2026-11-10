@@ -1,6 +1,6 @@
 # Portfolio 3: Transactions and Concurrency
 
-**Status:** Lab setup, COMMIT, and ROLLBACK demonstrated with screenshots; isolation and concurrency exercises are next.
+**Status:** Lab setup, COMMIT, ROLLBACK, READ COMMITTED, and REPEATABLE READ demonstrated with screenshots; the concurrency exercise is next.
 
 ## Goal
 
@@ -36,13 +36,16 @@ In [`rollback-example.sql`](rollback-example.sql), first run the block from `BEG
 
 ## 3. Isolation: compare two isolation levels
 
-Open two Query Tool tabs connected to `miva_bites_transaction_lab`. Call them **Session A** and **Session B**. In `isolation-demo.sql`, run the labeled blocks one at a time in this order:
+Open two Query Tool tabs connected to `miva_bites_transaction_lab`. Call them **Session A** and **Session B**. In `isolation-demo.sql`, select the exact line ranges below and click **Execute** (▶). Run each range separately:
 
-1. Session A starts `READ COMMITTED` and reads the demo value: **100**. Leave its transaction open.
-2. Session B adds 25 and commits. Read again in Session A: **125** is visible because each statement at `READ COMMITTED` gets a fresh committed snapshot.
-3. In Session A, commit. Start a `REPEATABLE READ` transaction and read **125**. Leave it open.
-4. In Session B, add another 25 and commit. Read again in Session A: it still sees **125** inside this transaction because `REPEATABLE READ` holds the same snapshot.
-5. Commit Session A. A new query sees **150**.
+1. Open `concurrency-setup.sql` and run lines **3–61**. This resets the isolated transaction lab to its starting values: rice **9,700 g**, lemons **99.5**, two open demo orders, and demo value **100**.
+2. Session A: run lines **5–8**. The result should be **100**. Leave this Query Tool tab open.
+3. Session B: run lines **11–15**. It should return **125**. Then run line **16** by itself to commit the update.
+4. Session A: run lines **19–21**. It should now return **125**. Then run line **22** by itself to end this transaction.
+5. Session A: run lines **25–28**. The result should be **125**. Leave the transaction open.
+6. Session B: run lines **31–35**. It should return **150**. Then run line **36** by itself to commit the update.
+7. Session A: run lines **39–41**. It should still return **125**. Then run line **42** by itself to end this transaction.
+8. Session A: run lines **45–47**. It should now return **150**.
 
 Do not run the whole isolation file at once: pause between the labeled blocks so the other session can commit between reads.
 
@@ -70,7 +73,12 @@ Save pgAdmin screenshots or query outputs in [`Evidence/portfolio3`](../../Evide
 - [COMMIT example result](../../Evidence/portfolio3/commit-example-success.png) shows the 9,800 g rice balance and one committed receipt.
 - [ROLLBACK preview](../../Evidence/portfolio3/rollback-preview.png) shows the uncommitted 10,300 g balance and two visible receipts.
 - [ROLLBACK confirmation](../../Evidence/portfolio3/rollback-confirmed.png) shows the restored 9,800 g balance and one committed receipt.
-- READ COMMITTED and REPEATABLE READ values across the two sessions.
+- [REPEATABLE READ first read](../../Evidence/portfolio3/isolation-repeatable-read-first-100.png) shows Session A reading 100.
+- [REPEATABLE READ keeps the earlier value](../../Evidence/portfolio3/isolation-repeatable-read-still-100.png) shows Session A still reading 100 after Session B commits its increase.
+- [REPEATABLE READ after commit](../../Evidence/portfolio3/isolation-repeatable-read-after-commit-125.png) shows a new query reading 125 after Session A commits.
+- [READ COMMITTED update](../../Evidence/portfolio3/isolation-read-committed-update-125.png) shows Session B changing the demo value to 125.
+- [READ COMMITTED next read](../../Evidence/portfolio3/isolation-read-committed-session-a-125.png) shows Session A reading 125 after Session B commits.
+- [REPEATABLE READ first read at 125](../../Evidence/portfolio3/isolation-repeatable-read-first-125.png) and [new read after commit at 150](../../Evidence/portfolio3/isolation-repeatable-read-after-commit-150.png) show the completed second run.
 - The blocked competing update, its zero-row result after Session A commits, and the final concurrency verification.
 
 Use the exact results from your own PostgreSQL run. These are expected values for the fresh seeded lab, not evidence until you have run the scripts and captured your own output.
