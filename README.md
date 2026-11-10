@@ -55,7 +55,7 @@ The matching [relational schema review](Portfolios/portfolio-1-database-design/s
 | [Portfolio 2: Query processing and optimisation](Portfolios/portfolio-2-query-processing-and-optimisation/README.md) | 7 | SQL, query results, execution plans, indexes, performance analysis | Complete: query results, scaled plans, and index comparison documented |
 | [Portfolio 3: Transactions and concurrency](Portfolios/portfolio-3-transactions-and-concurrency/README.md) | 7 | Commit, rollback, isolation, concurrency issue and control, output evidence | Complete: transaction, isolation, and concurrent stock-control examples with screenshots |
 | [Portfolio 4: NoSQL and advanced data models](Portfolios/portfolio-4-nosql-and-advanced-data-models/README.md) | 7 | NoSQL model, implementation evidence, suitability explanation | Complete: MongoDB document model, implementation, query results, indexes, validation, and screenshots documented |
-| Portfolio 5: Distributed and cloud database exercise | 6 | Replication, sharding, availability, consistency, or deployment evidence | Not started |
+| [Portfolio 5: Distributed and cloud database exercise](Portfolios/portfolio-5-distributed-cloud-databases/README.md) | 6 | Replication, sharding, availability, consistency, or deployment evidence | In progress: local three-member MongoDB replica-set lab prepared; run and capture evidence next |
 | Final documentation and technical reflection | 6 | 2-3 page LMS summary, repository link, evidence, reflection, references, AI-use declaration | Not started |
 
 ## Repository and evidence
@@ -66,7 +66,7 @@ Evidence will be organized under `Evidence/`, with portfolio work under `Portfol
 
 ## Technical direction
 
-The initial plan is PostgreSQL for the relational schema, SQL, query plans, and transaction work; MongoDB for the document-model exercise. The distributed/cloud exercise will use a reproducible approach selected when we reach Portfolio 5. These are working choices and can be adjusted before implementation.
+The initial plan is PostgreSQL for the relational schema, SQL, query plans, and transaction work; MongoDB for the document-model and distributed database exercises. Portfolio 5 uses three local MongoDB replica-set members on separate ports and data folders, so it can demonstrate replication without changing the Portfolio 4 database or requiring a cloud account.
 
 ## Academic integrity and AI use
 
