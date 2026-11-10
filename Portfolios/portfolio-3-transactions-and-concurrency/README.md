@@ -1,6 +1,6 @@
 # Portfolio 3: Transactions and Concurrency
 
-**Status:** Lab setup, COMMIT, ROLLBACK, READ COMMITTED, and REPEATABLE READ demonstrated with screenshots; the concurrency exercise is next.
+**Status:** Complete. Lab setup, COMMIT, ROLLBACK, READ COMMITTED, REPEATABLE READ, and concurrent stock consumption are demonstrated with screenshots.
 
 ## Goal
 
@@ -65,7 +65,7 @@ If Session A does not return 39.5 or Session B returns an updated row, stop befo
 
 The `UPDATE ... WHERE quantity_on_hand >= 60` takes a row lock and rechecks the condition after waiting for another transaction. This prevents both orders from spending the same stock. The balance update, movement insert, and order-status update are committed together, so a failure can be rolled back without leaving partial records.
 
-## Evidence to capture
+## Evidence captured
 
 Save pgAdmin screenshots or query outputs in [`Evidence/portfolio3`](../../Evidence/portfolio3/):
 
@@ -79,6 +79,11 @@ Save pgAdmin screenshots or query outputs in [`Evidence/portfolio3`](../../Evide
 - [READ COMMITTED update](../../Evidence/portfolio3/isolation-read-committed-update-125.png) shows Session B changing the demo value to 125.
 - [READ COMMITTED next read](../../Evidence/portfolio3/isolation-read-committed-session-a-125.png) shows Session A reading 125 after Session B commits.
 - [REPEATABLE READ first read at 125](../../Evidence/portfolio3/isolation-repeatable-read-first-125.png) and [new read after commit at 150](../../Evidence/portfolio3/isolation-repeatable-read-after-commit-150.png) show the completed second run.
-- The blocked competing update, its zero-row result after Session A commits, and the final concurrency verification.
+- [Session A stock update](../../Evidence/portfolio3/concurrency-session-a-39-5.png) shows the balance reduced to 39.500 lemons while the transaction remains open.
+- [Session B waiting](../../Evidence/portfolio3/concurrency-session-b-waiting.png) shows the competing update waiting for Session A to finish.
+- [Session A commit](../../Evidence/portfolio3/concurrency-session-a-commit.png) shows the movement and order-status updates being committed.
+- [Session B zero-row result](../../Evidence/portfolio3/concurrency-session-b-zero-rows.png) confirms the second order could not consume another 60 lemons.
+- [Order verification](../../Evidence/portfolio3/concurrency-verify-orders.png) shows order 9001 in preparation with -60 recorded and order 9002 still open with no consumption.
+- [Inventory reconciliation](../../Evidence/portfolio3/concurrency-verify-reconciliation.png) shows inventory and movement balances both at 39.500, with `balances_reconcile = true`.
 
-Use the exact results from your own PostgreSQL run. These are expected values for the fresh seeded lab, not evidence until you have run the scripts and captured your own output.
+The linked screenshots were captured from the PostgreSQL transaction lab. Expected values in the steps above describe a fresh lab setup; rerun `concurrency-setup.sql` before repeating the examples.
