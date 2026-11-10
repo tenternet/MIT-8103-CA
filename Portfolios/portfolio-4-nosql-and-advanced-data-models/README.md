@@ -1,6 +1,6 @@
 # Portfolio 4: NoSQL and Advanced Data Models
 
-**Status:** MongoDB setup succeeded; query outputs and final evidence capture are next.
+**Status:** MongoDB setup and read queries succeeded; visual Compass evidence is next.
 
 ## Goal
 
@@ -34,12 +34,20 @@ The stored document does not save a second copy of the order total. Queries calc
 - **Growth limit:** line items and payment attempts are expected to stay small for each order. If an order can accumulate a very large or unbounded event history, store that history in a separate collection.
 - **System boundary:** this is a portfolio model, not a live synchronization service. PostgreSQL remains authoritative for the relational POS and inventory. The NoSQL sample is a separate implementation of the order-reading use case.
 
+### Query results
+
+- The ticket lookup returns order `9301` as one document with embedded line items, a successful card payment, and its linked refund.
+- Menu sales aggregate to 2 Grilled Chicken Bowls worth ₦13,600, 2 Jollof Rice portions worth ₦5,000, and 2 Fresh Lemonades worth ₦2,400.
+- Net collections are ₦14,300 for order `9301` after its ₦500 refund, and ₦6,200 for order `9302` after excluding a failed cash attempt.
+- The Ikeja active-kitchen query returns an empty array as expected: Ikeja order `9301` is completed, while the active order `9302` is at Lekki.
+
 ## Files
 
 - [`setup.js`](setup.js) creates the `miva_bites_nosql_lab` database's `orders` collection, applies document validation, inserts two repeatable example orders, and creates indexes. It only replaces demo orders 9301 and 9302 when rerun.
 - [`queries.js`](queries.js) prints an order ticket, popular menu items, net successful collections, and active kitchen work.
 - Screenshots and other output evidence belong in [`Evidence/portfolio4`](../../Evidence/portfolio4/).
 - [`portfolio4-setup-output.png`](../../Evidence/portfolio4/portfolio4-setup-output.png) records the successful setup, inserted demo orders, and created indexes.
+- [`query-01-ticket.png`](../../Evidence/portfolio4/query-01-ticket.png), [`query-02-menu-sales.png`](../../Evidence/portfolio4/query-02-menu-sales.png), and [`query-03-collections-and-kitchen.png`](../../Evidence/portfolio4/query-03-collections-and-kitchen.png) record the four successful query outputs.
 
 ## Beginner setup on Windows
 
@@ -77,6 +85,7 @@ The setup script completed successfully: it inserted two demo orders, created th
 - The order-ticket query result.
 - The popular-menu-items aggregation output.
 - The net-collections aggregation output.
+- The active-kitchen query result, including the explanation for the empty Ikeja result.
 - The collection validator and indexes, or output from the setup script showing their creation.
 
 ## References
