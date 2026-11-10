@@ -1,6 +1,6 @@
 # Portfolio 4: NoSQL and Advanced Data Models
 
-**Status:** MongoDB setup and read queries succeeded; visual Compass evidence is next.
+**Status:** MongoDB setup, read queries, and embedded-document view are complete; index and validation evidence is next.
 
 ## Goal
 
@@ -48,6 +48,7 @@ The stored document does not save a second copy of the order total. Queries calc
 - Screenshots and other output evidence belong in [`Evidence/portfolio4`](../../Evidence/portfolio4/).
 - [`portfolio4-setup-output.png`](../../Evidence/portfolio4/portfolio4-setup-output.png) records the successful setup, inserted demo orders, and created indexes.
 - [`query-01-ticket.png`](../../Evidence/portfolio4/query-01-ticket.png), [`query-02-menu-sales.png`](../../Evidence/portfolio4/query-02-menu-sales.png), and [`query-03-collections-and-kitchen.png`](../../Evidence/portfolio4/query-03-collections-and-kitchen.png) record the four successful query outputs.
+- [`compass-order-embedded-fields.png`](../../Evidence/portfolio4/compass-order-embedded-fields.png) shows the two documents and order `9301` with its embedded line items and payment attempts.
 
 ## Beginner setup on Windows
 
@@ -80,6 +81,7 @@ The setup script completed successfully: it inserted two demo orders, created th
 ## Evidence checklist
 
 - MongoDB Compass connected to the local server and showing `miva_bites_nosql_lab.orders`.
+- The expanded order document with its embedded line items and payment history.
 - Successful setup output showing two inserted example orders and three created indexes.
 - The two example documents with their embedded line items and payment attempts.
 - The order-ticket query result.
