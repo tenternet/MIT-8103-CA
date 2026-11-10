@@ -1,6 +1,6 @@
 # Portfolio 4: NoSQL and Advanced Data Models
 
-**Status:** Document model designed; local MongoDB setup and implementation evidence are next.
+**Status:** MongoDB setup succeeded; query outputs and final evidence capture are next.
 
 ## Goal
 
@@ -37,39 +37,42 @@ The stored document does not save a second copy of the order total. Queries calc
 ## Files
 
 - [`setup.js`](setup.js) creates the `miva_bites_nosql_lab` database's `orders` collection, applies document validation, inserts two repeatable example orders, and creates indexes. It only replaces demo orders 9301 and 9302 when rerun.
-- [`queries.js`](queries.js) prints an order ticket, popular menu items, and net successful collections.
+- [`queries.js`](queries.js) prints an order ticket, popular menu items, net successful collections, and active kitchen work.
 - Screenshots and other output evidence belong in [`Evidence/portfolio4`](../../Evidence/portfolio4/).
+- [`portfolio4-setup-output.png`](../../Evidence/portfolio4/portfolio4-setup-output.png) records the successful setup, inserted demo orders, and created indexes.
 
 ## Beginner setup on Windows
 
 This lab uses a local MongoDB Community Server and MongoDB Compass. The Docker command-line client is present on the current computer, but its Docker engine is not running, so use the normal Windows service installation for this exercise.
 
-1. Install MongoDB Community Server for Windows using the [official installation guide](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/). In the installer, choose the complete setup and install MongoDB as a Windows service.
+1. Install MongoDB Community Server for Windows using the [official installation guide](https://www.mongodb.com/docs/v8.0/tutorial/install-mongodb-on-windows/). In the installer, choose the complete setup and install MongoDB as a Windows service.
 2. Install [MongoDB Compass](https://www.mongodb.com/try/download/compass) if it was not offered during the server setup.
-3. Open MongoDB Compass. In the connection box enter `mongodb://localhost:27017`, then click **Connect**. This connects Compass to the MongoDB service on this computer.
-4. Open the MongoDB Shell from the connected deployment by clicking the **`>_`** shell icon. Compass includes the `mongosh` shell.
-5. In the shell, run the setup script using this command. Keep the path inside the quotes:
+3. Install the standalone [MongoDB Shell (`mongosh`)](https://www.mongodb.com/docs/mongodb-shell/install/?operating-system=windows&windows-installation-method=msiexec). The Community Server installer does not include this separate command-line shell.
+4. Open MongoDB Compass. In the connection box enter `mongodb://localhost:27017`, then click **Connect**. This connects Compass to the MongoDB service on this computer.
+5. Open **PowerShell** and run `mongosh --version` to confirm the shell is installed.
+6. In PowerShell, run the setup script with `--file`:
 
-   ```javascript
-   load("C:/Users/User/Documents/Miva/Courses/First Semester/MIT 8103 - Advanced Database Systems/Advanced DB CA/Portfolios/portfolio-4-nosql-and-advanced-data-models/setup.js")
+   ```powershell
+   mongosh "mongodb://localhost:27017" --file "C:\Users\User\Documents\Miva\Courses\First Semester\MIT 8103 - Advanced Database Systems\Advanced DB CA\Portfolios\portfolio-4-nosql-and-advanced-data-models\setup.js"
    ```
 
-   If you clone the repository into a different folder, replace the path with that copy's full path. Forward slashes work in this Windows path.
+   If you clone the repository into a different folder, replace the script path with that copy's full path. Compass's embedded shell reported that `load()` is not implemented in this environment, so use the standalone shell and `--file` to run the script.
 
-6. In Compass, refresh the deployment list if needed. Open database `miva_bites_nosql_lab`, then collection `orders`. You should see two documents with order IDs `9301` and `9302`.
-7. Run the read queries by loading `queries.js` in the shell:
+7. In Compass, refresh the deployment list if needed. Open database `miva_bites_nosql_lab`, then collection `orders`. You should see two documents with order IDs `9301` and `9302`.
+8. Run the read queries from PowerShell:
 
-   ```javascript
-   load("C:/Users/User/Documents/Miva/Courses/First Semester/MIT 8103 - Advanced Database Systems/Advanced DB CA/Portfolios/portfolio-4-nosql-and-advanced-data-models/queries.js")
+   ```powershell
+   mongosh "mongodb://localhost:27017" --file "C:\Users\User\Documents\Miva\Courses\First Semester\MIT 8103 - Advanced Database Systems\Advanced DB CA\Portfolios\portfolio-4-nosql-and-advanced-data-models\queries.js"
    ```
 
-8. Capture screenshots of the two documents in Compass, the query output, and the validator/index information. Save them in `Evidence/portfolio4`.
+9. Capture screenshots of the two documents in Compass, the query output, and the validator/index information. Save them in `Evidence/portfolio4`.
 
-The MongoDB Community Windows installer and Compass are separate components. The MongoDB Server installer does not include the standalone `mongosh` program, but Compass provides an embedded `mongosh` shell for this lab.
+The setup script completed successfully: it inserted two demo orders, created three indexes, and reported an example order count of `2`. The output screenshot is saved in `Evidence/portfolio4`.
 
 ## Evidence checklist
 
 - MongoDB Compass connected to the local server and showing `miva_bites_nosql_lab.orders`.
+- Successful setup output showing two inserted example orders and three created indexes.
 - The two example documents with their embedded line items and payment attempts.
 - The order-ticket query result.
 - The popular-menu-items aggregation output.
@@ -78,6 +81,6 @@ The MongoDB Community Windows installer and Compass are separate components. The
 
 ## References
 
-- MongoDB, [Install MongoDB Community Edition on Windows](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/).
+- MongoDB, [Install MongoDB Community Edition on Windows](https://www.mongodb.com/docs/v8.0/tutorial/install-mongodb-on-windows/) and [install `mongosh` on Windows](https://www.mongodb.com/docs/mongodb-shell/install/?operating-system=windows&windows-installation-method=msiexec).
 - MongoDB, [MongoDB Compass download](https://www.mongodb.com/try/download/compass) and [embedded MongoDB Shell](https://www.mongodb.com/docs/compass/embedded-shell/).
 - MongoDB, [Run JavaScript files from `mongosh`](https://www.mongodb.com/docs/mongodb-shell/write-scripts/).
