@@ -1,6 +1,6 @@
 # Portfolio 4: NoSQL and Advanced Data Models
 
-**Status:** MongoDB setup, read queries, and embedded-document view are complete; index and validation evidence is next.
+**Status:** Complete: MongoDB document model, setup, queries, indexes, validation, suitability explanation, and evidence are documented.
 
 ## Goal
 
@@ -41,6 +41,12 @@ The stored document does not save a second copy of the order total. Queries calc
 - Net collections are ₦14,300 for order `9301` after its ₦500 refund, and ₦6,200 for order `9302` after excluding a failed cash attempt.
 - The Ikeja active-kitchen query returns an empty array as expected: Ikeja order `9301` is completed, while the active order `9302` is at Lekki.
 
+### Indexes and document validation
+
+The collection has MongoDB's default `_id` index, a unique `uq_orderId` index so each POS order ID appears once, and two compound indexes: `ix_branch_openedAt` for finding a branch's orders by opening time, and `ix_status_openedAt` for finding orders by status and opening time. Compass shows all four indexes as ready.
+
+The collection validator uses MongoDB `$jsonSchema` rules to require the order's core fields and constrain BSON types, positive identifiers and quantities, allowed order and kitchen statuses, and the structure of the embedded `lineItems` and `paymentAttempts` arrays. Compass shows validation action **Error** and level **Strict**, so inserted or updated documents must satisfy the schema.
+
 ## Files
 
 - [`setup.js`](setup.js) creates the `miva_bites_nosql_lab` database's `orders` collection, applies document validation, inserts two repeatable example orders, and creates indexes. It only replaces demo orders 9301 and 9302 when rerun.
@@ -49,6 +55,8 @@ The stored document does not save a second copy of the order total. Queries calc
 - [`portfolio4-setup-output.png`](../../Evidence/portfolio4/portfolio4-setup-output.png) records the successful setup, inserted demo orders, and created indexes.
 - [`query-01-ticket.png`](../../Evidence/portfolio4/query-01-ticket.png), [`query-02-menu-sales.png`](../../Evidence/portfolio4/query-02-menu-sales.png), and [`query-03-collections-and-kitchen.png`](../../Evidence/portfolio4/query-03-collections-and-kitchen.png) record the four successful query outputs.
 - [`compass-order-embedded-fields.png`](../../Evidence/portfolio4/compass-order-embedded-fields.png) shows the two documents and order `9301` with its embedded line items and payment attempts.
+- [`compass-indexes.png`](../../Evidence/portfolio4/compass-indexes.png) shows the default index and all three named indexes in READY status.
+- [`compass-validation-01.png`](../../Evidence/portfolio4/compass-validation-01.png), [`compass-validation-02.png`](../../Evidence/portfolio4/compass-validation-02.png), [`compass-validation-03.png`](../../Evidence/portfolio4/compass-validation-03.png), [`compass-validation-04.png`](../../Evidence/portfolio4/compass-validation-04.png), and [`compass-validation-05.png`](../../Evidence/portfolio4/compass-validation-05.png) show the strict JSON Schema validator, including embedded line and payment-attempt rules.
 
 ## Beginner setup on Windows
 
@@ -82,6 +90,7 @@ The setup script completed successfully: it inserted two demo orders, created th
 
 - MongoDB Compass connected to the local server and showing `miva_bites_nosql_lab.orders`.
 - The expanded order document with its embedded line items and payment history.
+- The named indexes and JSON Schema validator with strict error enforcement.
 - Successful setup output showing two inserted example orders and three created indexes.
 - The two example documents with their embedded line items and payment attempts.
 - The order-ticket query result.
