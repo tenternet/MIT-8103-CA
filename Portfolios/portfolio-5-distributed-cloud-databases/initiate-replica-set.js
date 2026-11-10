@@ -7,16 +7,12 @@ const replicaSetConfig = {
   ]
 };
 
-const currentStatus = db.adminCommand({ replSetGetStatus: 1 });
-if (currentStatus.ok === 1) {
-  print("This replica set is already initialized. Current members:");
-  printjson(currentStatus.members.map(member => ({
-    name: member.name,
-    state: member.stateStr,
-    health: member.health
-  })));
-} else {
-  print("Initializing the three-member Miva Bites replica set:");
-  printjson(rs.initiate(replicaSetConfig));
-  print("Wait about 10 seconds, then run replica-status.js.");
+print("Initializing the three-member Miva Bites replica set:");
+const initializationResult = rs.initiate(replicaSetConfig);
+printjson(initializationResult);
+
+if (initializationResult.ok !== 1) {
+  throw new Error("MongoDB did not accept the replica-set configuration. Send me the result above.");
 }
+
+print("Wait about 10 seconds, then check the member states.");
